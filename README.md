@@ -63,3 +63,56 @@ Este comando ejecutará la aplicación en un entorno de producción.
 Este proyecto está bajo la Licencia ISC 
 
 
+
+Crear una API para una aplicación de películas
+
+Genres
+name 
+
+Actors
+firstName
+lastName
+nationality
+image
+birthday
+
+Directors
+firstName
+lastName
+nationality
+image
+birthday
+
+Movies
+name
+image
+synopsis
+releaseYear
+
+Crear las relaciones: una película puede tener muchos actores, muchos directores y ser de muchos géneros. 
+
+Cada modelo debe tener sus endpoints para un CRUD.
+
+Para el endpoint GET -> /movies, cada película debe traer sus géneros, actores y directores.
+
+Adicionalmente, añadir los siguientes endpoints
+
+POST -> /movies/:id/genres para modificar los géneros de una película.
+
+Debe recibir body de números, que serán los id’s de los géneros a los que pertenece esa película.
+
+A su vez, debe retornar los géneros recién añadidos en un arreglo. 
+ 
+
+
+
+Los siguientes endpoints también deben cumplir con las instrucciones mencionadas anteriormente. 
+
+POST -> /movies/:id/actors para modificar los actores de una película
+
+POST -> /movies/:id/directors para modificar los directores de una película
+
+Conectar la API con este frontend y corroborar que todo esté funcionando correctamente: https://github.com/Generacion-34/week3-entregable-frontend.git 
+
+
+
